@@ -1,0 +1,11 @@
+Package: NextWord
+Type: Package
+Title: Provides tools to help predict the next word
+Version: 0.1
+Date: 2015-07-06
+Author: Justin Nafe
+Maintainer: Justin Nafe <justinjnafe@gmail.com>
+Description: This package provides tools to help predict the next word using differnt models such as Markov Chains and N-Gram.
+License: GPL-3
+LazyData: TRUE
+Imports: tm, NLP, dplyr, RWeka, openNLP
