@@ -76,7 +76,7 @@ predict <- function(model, input, cleanedPosText = FALSE){
     if(length(currentTokens) == 1){
       tempResults <- getBigramPrediction(model, input)
       results <- tempResults
-      if(length(unique(results$token)) == 0){
+      if(length(unique(results$token)) < 3){
         tempResults <- getUnigramPrediction(model, input)
         results <- rbind(results, tempResults)
       }
